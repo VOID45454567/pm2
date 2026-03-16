@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
     message: "Server running",
     endpoints: {
       processes: "/api/pm2/processes",
+      status: "/api/pm2/check-status/:lines",
     },
   });
 });
